@@ -21,7 +21,7 @@ namespace BAv1
 
                 switch (option)
                 {
-                    case 1: // View Products
+                    case 1: 
                         Console.WriteLine("\nProducts:");
                         foreach (Product product in products)
                         {
@@ -29,7 +29,7 @@ namespace BAv1
                         }
                         break;
 
-                    case 2: // Exit
+                    case 2: 
                         return;
 
                     default:
