@@ -1,0 +1,7 @@
+D:\CS\semester 2\OOP\Bussiness Application\BAv1\BAv1\bin\Debug\BAv1.exe.config
+D:\CS\semester 2\OOP\Bussiness Application\BAv1\BAv1\bin\Debug\BAv1.exe
+D:\CS\semester 2\OOP\Bussiness Application\BAv1\BAv1\bin\Debug\BAv1.pdb
+D:\CS\semester 2\OOP\Bussiness Application\BAv1\BAv1\obj\Debug\BAv1.csproj.AssemblyReference.cache
+D:\CS\semester 2\OOP\Bussiness Application\BAv1\BAv1\obj\Debug\BAv1.csproj.CoreCompileInputs.cache
+D:\CS\semester 2\OOP\Bussiness Application\BAv1\BAv1\obj\Debug\BAv1.exe
+D:\CS\semester 2\OOP\Bussiness Application\BAv1\BAv1\obj\Debug\BAv1.pdb
