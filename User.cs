@@ -15,7 +15,6 @@ using System.Threading.Tasks;
     public string Password;
     public string Role; 
 
-    // Constructor to create a new user
     public User(string username, string password, string role)
     {
         Username = username;
@@ -23,7 +22,7 @@ using System.Threading.Tasks;
         Role = role;
     }
 
-    // Save user information to a text file
+
     public static void SaveUserToFile(User user)
     {
         using (StreamWriter writer = new StreamWriter("users.txt", true))
@@ -32,7 +31,7 @@ using System.Threading.Tasks;
         }
     }
 
-    // Load users from the text file
+
     public static List<User> LoadUsersFromFile()
     {
         List<User> users = new List<User>();
@@ -48,7 +47,7 @@ using System.Threading.Tasks;
         return users;
     }
 
-    // Sign up a new user
+
     public static bool SignUp()
     {
         Console.Write("Enter Username: ");
@@ -58,7 +57,7 @@ using System.Threading.Tasks;
         Console.Write("Enter Role (user/admin): ");
         string role = Console.ReadLine();
 
-        // Validate role
+        
         if (role != "user" && role != "admin")
         {
             Console.WriteLine("Invalid role. Role must be 'user' or 'admin'.");
@@ -67,7 +66,7 @@ using System.Threading.Tasks;
             return false;
         }
 
-        // Check if the user already exists
+        
         List<User> users = LoadUsersFromFile();
         foreach (User user in users)
         {
@@ -80,14 +79,14 @@ using System.Threading.Tasks;
             }
         }
 
-        // Create and save the new user
+        
         User newUser = new User(username, password, role);
         SaveUserToFile(newUser);
         Console.WriteLine("User registered successfully!");
         return true;
     }
 
-    // Sign in an existing user
+    
     public static string SignIn()
     {
         Console.Write("Enter Username: ");
