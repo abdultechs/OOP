@@ -12,8 +12,7 @@ namespace BAv1
         public string Name;
         public int Price;
         public int Stock;
-
-        // Constructor to create a new product
+        
         public Product(string name, int price, int stock)
         {
             Name = name;
@@ -21,7 +20,6 @@ namespace BAv1
             Stock = stock;
         }
 
-        // Save products to a text file
         public static void SaveProductsToFile(List<Product> products)
         {
             using (StreamWriter writer = new StreamWriter("products.txt"))
@@ -33,7 +31,7 @@ namespace BAv1
             }
         }
 
-        // Load products from the text file
+
         public static List<Product> LoadProductsFromFile()
         {
             List<Product> products = new List<Product>();
@@ -49,7 +47,6 @@ namespace BAv1
             return products;
         }
 
-        // Admin menu for CRUD operations
         public static void AdminMenu()
         {
             List<Product> products = LoadProductsFromFile();
@@ -66,7 +63,7 @@ namespace BAv1
 
                 switch (option)
                 {
-                    case 1: // for Add Product
+                    case 1: 
                         Console.Write("Enter Product Name: ");
                         string name = Console.ReadLine();
                         Console.Write("Enter Product Price: ");
@@ -78,7 +75,7 @@ namespace BAv1
                         Console.WriteLine("Product added successfully!");
                         break;
 
-                    case 2: // for View Products
+                    case 2: 
                         Console.WriteLine("\nProducts:");
                         foreach (Product product in products)
                         {
@@ -86,7 +83,7 @@ namespace BAv1
                         }
                         break;
 
-                    case 3: // for Update Product
+                    case 3: 
                         Console.Write("Enter Product Name to Update: ");
                         string updateName = Console.ReadLine();
                         Product productToUpdate = products.Find(p => p.Name == updateName);
@@ -105,7 +102,7 @@ namespace BAv1
                         }
                         break;
 
-                    case 4: // for Delete Product
+                    case 4: 
                         Console.Write("Enter Product Name to Delete: ");
                         string deleteName = Console.ReadLine();
                         Product productToDelete = products.Find(p => p.Name == deleteName);
