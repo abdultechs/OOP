@@ -40,7 +40,7 @@ namespace BAv1
                         }
                         break;
 
-                    case 3: // Exit
+                    case 3:
                         return;
 
                     default:
